@@ -21,13 +21,12 @@ import {
 } from 'firebase/auth';
 
 const firebaseApp = initializeApp({
-  apiKey: "dummy-apiKey",
-  authDomain: "dummy-authDomain.firebaseapp.com",
-  projectId: "dummy-project-id",
-  storageBucket: "dummy-authDomain.firebaseapp.com",
-  messagingSenderId: "123456789012",
-  appId: "1:123456789012:web:7c7abae699b868b7f896ec",
-  measurementId: "G-ABCDEFGHIJ"
+  apiKey: "AIzaSyAva5fyh1j5_SnLZVYu3F1EnW7lh4YPSTo",
+  authDomain: "moneyhub-f2246.firebaseapp.com",
+  projectId: "moneyhub-f2246",
+  storageBucket: "moneyhub-f2246.appspot.com",
+  messagingSenderId: "611591284009",
+  appId: "1:611591284009:web:cb7829aa12bba14b41c338"
 });
 
 // Login using email/password
