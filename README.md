@@ -1,22 +1,39 @@
-# Firebase Video Samples
+# Firebase Fundamentals: Getting Started with Firebase Authentication on the Web
 
-This repository contains sample code for some of the videos on the [Firebase
-YouTube channel](https://www.youtube.com/c/firebase).
+This is the source code used in this video: [Getting started with Firebase Authentication on the web](https://youtu.be/rbuSx1yEgV8).
 
-## How to use this project
+## Prerequisites
 
-Some of the projects might be fully functional sample apps, some might just
-contain the code snippets we used in our videos.
+* Install the Firebase CLI tools and the Firebase Emulator suite ([instructions](https://firebase.google.com/docs/emulator-suite/install_and_configure))
 
-We make this code available as-is.
+## How to use
 
+1. Clone the repository
+2. Navigate into the root folder of this project
+3. Install the dependencies
 
-``` shell
-git clone https://github.com/googlestaging/firebase-video-samples
-cd firebase-video-samples
-```
+    ```bash
+    $ npm install
+    ```
 
-## License
+4.  Run webpack to bundle your code:
 
-The contents of this repository are licensed under the
-[Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+    ```bash
+    $ npx webpack
+    ```
+
+5. Run the Firebase Emulator to host your app locally:
+
+    ```bash
+    $ firebase emulators:start
+    ```
+
+6. Open `http://localhost:5001` in your browser
+  ![](images/login.png)
+7. Sign up using an email address and password of your choice (e.g. `me@awesomekittens.test`)
+8. You should now be signed in
+  ![](images/loggedin.png)
+9. Navigate to `http://localhost:4000/auth` to see the newly created user in the Firebase Authentication Emulator UI
+  ![](images/auth_emulator_ui.png)
+10. Go back to the app, and sign out
+11. Sign in using the credentials you used to create the test account
